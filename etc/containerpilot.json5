@@ -41,13 +41,13 @@
         each: "changed"
       }
     },
-    {
+    /*{
       name: "snapshot-check",
       exec: "python /usr/local/bin/manage.py snapshot_task",
       timeout: "10m",
       when: {
         interval: "5m"
-      },
+      },*/
     },
     {{ if .CONSUL_AGENT }}{
       name: "consul-agent",
